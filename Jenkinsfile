@@ -8,7 +8,7 @@ pipeline {
         stage('SCM') {
             steps {
                 echo 'Hello Clone stage'
-                https://github.com/jaswanthBavi/mvn-war.git
+                 https://github.com/jaswanthBavi/maven-project1.git
                 }
         }
         stage('Build') {
@@ -20,7 +20,7 @@ pipeline {
         stage('Dev-Deploy') {
             steps {
                 echo 'Hello Docker Deploy'
-                deploy adapters: [tomcat9(credentialsId: '53cf4296-a933-4dda-8214-e621c49c4515', path: '', url: 'http://192.168.64.138:8081/')], contextPath: 'nani-mvn-1.0-SNAPSHOT.war', war: '**/*.war'
+                https://github.com/jaswanthBavi/maven-project1.git  
                   }
         }
 }
